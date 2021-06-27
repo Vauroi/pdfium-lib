@@ -344,7 +344,7 @@ def run_task_patch():
     f.copy_file("/usr/include/zlib.h", os.path.join(source_dir, "zlib.h"))
     f.copy_file("/usr/include/zconf.h", os.path.join(source_dir, "zconf.h"))
     f.copy_file("/usr/include/jerror.h", os.path.join(source_dir, "jerror.h"))
-    f.copy_file("/usr/include/x86_64-linux-gnu/config.h", os.path.join(source_dir, "jconfig.h"))
+    f.copy_file("/usr/include/x86_64-linux-gnu/jconfig.h", os.path.join(source_dir, "jconfig.h"))
     f.copy_file("/usr/include/linux/limits.h", os.path.join(linux_dir, "limits.h"))
 
     f.debug("Copied!")
