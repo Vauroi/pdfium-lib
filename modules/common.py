@@ -56,9 +56,9 @@ def run_task_build_emsdk():
     command = " ".join(["./emsdk", "activate", "latest"])
     check_call(command, cwd=cwd, shell=True)
 
-    # cwd = tools_dir
-    # command = " ".join(["source", "emsdk_env.sh"])
-    # check_call(command, cwd=cwd, shell=True)
+    cwd = tools_dir
+    command = " ".join(["source", "build/emsdk/emsdk_env.sh"])
+    check_call(command, cwd=cwd, shell=True)
 
 
 def run_task_format():
