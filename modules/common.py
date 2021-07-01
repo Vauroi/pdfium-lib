@@ -49,15 +49,15 @@ def run_task_build_emsdk():
     check_call(command, cwd=cwd, shell=True)
 
     cwd = tools_dir
-    command = " ".join(["git", "checkout", "2.0.12"])
+    command = " ".join(["git", "checkout", "2.0.21"])
     check_call(command, cwd=cwd, shell=True)
 
     cwd = tools_dir
-    command = " ".join(["./emsdk", "install", "2.0.12"])
+    command = " ".join(["./emsdk", "install", "2.0.21"])
     check_call(command, cwd=cwd, shell=True)
 
     cwd = tools_dir
-    command = " ".join(["./emsdk", "activate", "2.0.12"])
+    command = " ".join(["./emsdk", "activate", "2.0.21"])
     check_call(command, cwd=cwd, shell=True)
 
     # cwd = tools_dir
